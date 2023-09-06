@@ -1,0 +1,28 @@
+.carousel {
+  width: 100%; /* Ancho del carrusel */
+  overflow: hidden;
+}
+
+.images {
+  display: flex;
+  animation: slide 5s linear infinite; /* Animación infinita */
+  white-space: nowrap;
+  transform: translateX(0%);
+}
+
+.images img {
+  width: 300px; /* Ancho de cada imagen */
+  height: auto;
+  margin-right: 10px; /* Espacio entre imágenes (ajusta según tu preferencia) */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(
+      -100%
+    ); /* Se mueve por el ancho de las tres imágenes */
+  }
+}
