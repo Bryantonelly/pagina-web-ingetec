@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LineasNegociosComponent } from './lineas-negocios/lineas-negocios.component';
 import { LineasNegociosRoutingModule } from './lineas-negocios-routing.module';
+import { LineasNegociosComponent } from './lineas-negocios/lineas-negocios.component';
 
 
 
 @NgModule({
   declarations: [
-
+    LineasNegociosComponent
   ],
   imports: [
     CommonModule,
