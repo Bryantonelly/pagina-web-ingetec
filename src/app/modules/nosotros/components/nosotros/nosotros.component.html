@@ -1,5 +1,122 @@
-<div class="nosotros__container container__general">
-  <h1>kefbhfiwfa</h1>
+<div class="container__general">
+  <div class="card_vertical">
+    <div class="mensaje_bienvenida">
+      <div class="img">
+        <div class="mensaje">
+          <h1>20</h1>
+          <h2>AÑOS DE SERVICIO</h2>
+        </div>
+        <!-- <img [src]="'assets/img/bienvenida.png'" /> -->
+        <app-aniversario></app-aniversario>
+      </div>
+      <div class="descripcion">
+        <h2>
+          Somos una empresa tecnológica que brinda servicios de consultoría,
+          ingeniería e infraestructura, aplicando soluciones innovadoras e
+          integrales, especialmente en proyectos de obra civil, eléctrica,
+          electromecánica y telecomunicaciones, generando valor a corto y largo
+          plazo a nuestros clientes mediante la profesionalización de la gestión
+          de proyectos lo que nos permite predecir y mitigar el nivel de riesgo,
+          gestionar eficientemente los costos, obteniendo como resultado
+          proyectos de calidad, dentro de los plazos y costos comprometidos. Por
+          ello, para garantizar el éxito en la gestión de los proyectos, hemos
+          adoptado el uso y aplicación de la Guía PMBOK del Project Management
+          Institute PMI ® en todos los proyectos asignados por nuestros
+          clientes. Ingetec C&E ha participado en el diseño, construcción,
+          ampliación, mejora e implementación de infraestructura de los
+          principales operadores de telecomunicaciones y proveedores de
+          infraestructura pasiva de telecomunicaciones del Perú, desarrollando
+          proyectos de obra civil, eléctrica, electromecánica y de
+          telecomunicaciones. También hemos participado en proyectos importantes
+          de consultoría energética, diseño, construcción y puesta en servicio
+          de sistemas eléctricos y electromecánicos para clientes del sector
+          minero, de tecnología médica, e industrial.
+        </h2>
+      </div>
+    </div>
+  </div>
 
-  <app-aniversario></app-aniversario>
+  <div class="card_vertical">
+    <div class="clientes politicas">
+      <h1>NUESTROS CLIENTES</h1>
+
+      <div class="sector">
+        <div class="img" *ngFor="let item of items">
+          <img
+            [src]="'assets/img/clientes/' + item + '.png'"
+            alt="Image {{ item }}"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card_vertical">
+    <div class="mensaje_vmv">
+      <div class="img">
+        <img [src]="'assets/img/vision.png'" />
+      </div>
+      <div class="descripcion">
+        <h1>VISIÓN</h1>
+
+        <h2>
+          SER LA EMPRESA SOSTENIBLE, LÍDER Y REFERENTE NACIONAL EN SERVICIOS DE
+          CONSULTORÍA, INGENIERÍA E I NFRAESTRUCTURA, COMPROMETIDOS CON LA
+          SEGURIDAD, CALIDAD, MEDIO AMBIENTE Y RESPONSABILIDAD SOCIAL.
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="card_vertical">
+    <div class="mensaje_vmv">
+      <div class="descripcion">
+        <h1>MISIÓN</h1>
+
+        <h2>
+          PROPORCIONAR SOLUCIONES INTEGRALES A NUESTROS CLIENTES, ATENDIENDO SUS
+          NECESIDADES DE CONSULTORÍA, I NGENIERÍA E INFRAESTRUCTURA,
+          ESPECIALMENTE EN PROYECTOS DE OBRA CIVIL, ELÉCTRICA, ELECTROMECÁNICA Y
+          TELECOMUNICACIONES, GARANTIZANDO LA GENERACIÓN DE VALOR PARA NUESTROS
+          CLIENTES, EMPLEADOS Y ACCIONISTAS.
+        </h2>
+      </div>
+      <div class="img">
+        <img [src]="'assets/img/mision.png'" />
+      </div>
+    </div>
+  </div>
+
+  <div class="card_vertical">
+    <div class="mensaje_vmv">
+      <div class="img">
+        <img [src]="'assets/img/valores.png'" />
+      </div>
+      <div class="descripcion">
+        <h1>VALORES</h1>
+        <li>INTEGRIDAD</li>
+        <li>INNOVACIÓN CONSTANTE</li>
+        <li>TRABAJO EN EQUIPO</li>
+        <li>CULTURA DE SEGURIDAD</li>
+        <li>RESPONSABILIDAD SOCIAL Y AMBIENTAL</li>
+      </div>
+    </div>
+  </div>
+
+  <div class="card_vertical">
+    <div class="politicas">
+      <h1>POLÍTICAS Y CÓDIGOS</h1>
+      <div class="lista_pdfs">
+        <div class="documento" *ngFor="let documento of documentos">
+          <a [href]="documento.url" target="_blank">
+            <img src="assets/img/pdf.png" alt="PDF Icon" />
+            {{ documento.nombre }}
+          </a>
+        </div>
+      </div>
+      <!-- <a href="https://ingetecce.github.io/LineaEtica/" target="_blank">
+        <h3>LINEA ETICA</h3>
+      </a> -->
+    </div>
+  </div>
 </div>

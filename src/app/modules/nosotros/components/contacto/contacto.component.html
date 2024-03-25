@@ -1,0 +1,43 @@
+<div class="container__general">
+  <div class="contenido">
+    <div class="company_info">
+      <h1>INGETEC CONSULTORES Y EJECUTORES S.R.L.</h1>
+      <p>E-mail</p>
+      <p>compliance.officer@ingetecperu.com</p>
+      <p>atencionalcliente@ingetecperu.com</p>
+      <p>TELÉFONO</p>
+      <p>+51 998 380 182</p>
+    </div>
+
+    <div class="contact_form">
+      <h1>CONTÁCTANOS</h1>
+      <form (submit)="submitForm()">
+        <div class="section_form">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required />
+        </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="map" class="map" id="map">
+    <h1>UBICACIÓN</h1>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3059981557208!2d-77.03823675385526!3d-12.091191757685682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c860acc8458f%3A0x6462ba24d890f3a8!2sRom%C3%A1n%2C%20San%20Isidro%2015046!5e0!3m2!1ses!2spe!4v1711331773405!5m2!1ses!2spe"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>

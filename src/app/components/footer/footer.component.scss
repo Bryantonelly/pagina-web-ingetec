@@ -1,0 +1,55 @@
+.container_footer {
+  background-color: #073571e9; /* Color de fondo azul eléctrico */
+  color: #bdaeaea0; /* Color del texto blanco */
+  padding: 0.7rem 0rem; /* Espaciado interno */
+  text-align: center; /* Alineación del texto al centro */
+}
+
+.footer_links {
+  margin-bottom: 1rem; /* Margen inferior para separar los enlaces del texto */
+}
+
+.footer_links a {
+  display: inline-block; /* Convertir enlaces en bloques para que ocupen el ancho completo */
+  margin-right: 1rem; /* Espaciado entre los enlaces */
+}
+
+.footer_links img {
+  height: 3rem; /* Tamaño de las imágenes */
+  margin-right: 1rem;
+  width: 3rem; /* Espaciado a la derecha de las imágenes */
+}
+
+.footer_links .linea_etica img {
+  height: 3rem; /* Tamaño de las imágenes */
+  margin-right: 1rem;
+  width: 13rem; /* Espaciado a la derecha de las imágenes */
+}
+
+.scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%; /* Hace el botón circular */
+  font-size: 24px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+  z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
+  transition: background-color 0.3s, transform 0.3s; /* Agrega transiciones suaves */
+}
+
+.scrollToTopButton:hover {
+  background-color: #555; /* Cambia el color de fondo al pasar el cursor */
+}
+
+.scrollToTopButton:focus {
+  outline: none; /* Elimina el borde de enfoque predeterminado */
+}

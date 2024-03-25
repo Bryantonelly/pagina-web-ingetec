@@ -1,19 +1,9 @@
-<div class="carousel">
+<div class="carousel_">
   <div class="images">
-    <img src="assets/img/carousel/1.png" alt="Image 1" />
-    <img src="assets/img/carousel/2.png" alt="Image 2" />
-    <img src="assets/img/carousel/3.png" alt="Image 3" />
-    <img src="assets/img/carousel/1.png" alt="Image 1" />
-    <img src="assets/img/carousel/2.png" alt="Image 2" />
-    <img src="assets/img/carousel/3.png" alt="Image 3" />
-    <img src="assets/img/carousel/1.png" alt="Image 1" />
-    <img src="assets/img/carousel/2.png" alt="Image 2" />
-    <img src="assets/img/carousel/3.png" alt="Image 3" />
-    <img src="assets/img/carousel/1.png" alt="Image 1" />
-    <img src="assets/img/carousel/2.png" alt="Image 2" />
-    <img src="assets/img/carousel/3.png" alt="Image 3" />
-    <img src="assets/img/carousel/1.png" alt="Image 1" />
-    <img src="assets/img/carousel/2.png" alt="Image 2" />
-    <img src="assets/img/carousel/3.png" alt="Image 3" />
+    <img
+      *ngFor="let item of items"
+      [src]="'assets/img/carousel/' + item + '.jpeg'"
+      alt="Image {{ item }}"
+    />
   </div>
 </div>

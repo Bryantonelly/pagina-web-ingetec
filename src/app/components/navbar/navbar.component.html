@@ -1,36 +1,39 @@
 <nav class="navbar">
   <div class="navbar__container">
-      <img class="navbar__brand" src="assets\img\ingetec-sin-fondo.png" alt="">
-      <button class="navbar__toggler" type="button" (click)="onChangeBar()">
-        <i class="fas fa-bars" *ngIf="!isOpen"></i>
-        <i class="fas fa-x" *ngIf="isOpen"></i>
-      </button>
+    <img class="navbar__brand" src="assets\img\ingetec-sin-fondo.png" alt="" />
+    <button class="navbar__toggler" type="button" (click)="onChangeBar()">
+      <i class="fas fa-bars" *ngIf="!isOpen"></i>
+      <i class="fas fa-x" *ngIf="isOpen"></i>
+    </button>
 
-      <ul class="navbar__options" >
-        <li class="nav__item" (click)="goRoute('01')">
-          <a class="nav__link" >Nosotros</a>
-        </li>
-        <li class="nav__item" (click)="goRoute('02')">
-          <a class="nav__link" >Linea de Negocio</a>
-        </li>
-        <li class="nav__item" (click)="goRoute('03')">
-          <a class="nav__link">Proyectos</a>
-        </li>
-        <li class="nav__item" (click)="goRoute('04')">
-          <a class="nav__link">Certificaciones</a>
-        </li>
-        <li class="nav__item" (click)="goRoute('05')">
-          <a class="nav__link">Novedades</a>
-        </li>
-      </ul>
+    <ul class="navbar__options">
+      <li class="nav__item" (click)="goRoute('01')">
+        <a class="nav__link">Nosotros</a>
+      </li>
+      <li class="nav__item" (click)="goRoute('02')">
+        <a class="nav__link">Linea de Negocio</a>
+      </li>
+      <li class="nav__item" (click)="goRoute('03')">
+        <a class="nav__link">Proyectos</a>
+      </li>
+      <li class="nav__item" (click)="goRoute('04')">
+        <a class="nav__link">Certificaciones</a>
+      </li>
+      <li class="nav__item" (click)="goRoute('05')">
+        <a class="nav__link">Novedades</a>
+      </li>
+      <li class="nav__item" (click)="goRoute('06')">
+        <a class="nav__link">Contacto</a>
+      </li>
+    </ul>
   </div>
 
-  <ul class="navbar__collapse" [ngClass]="{'hide': isOpen, '': !isOpen}">
+  <ul class="navbar__collapse" [ngClass]="{ hide: isOpen, '': !isOpen }">
     <li class="nav__item" (click)="goRoute('01')">
-      <a class="nav__link" >Nosotros</a>
+      <a class="nav__link">Nosotros</a>
     </li>
     <li class="nav__item" (click)="goRoute('02')">
-      <a class="nav__link" >Linea de Negocio</a>
+      <a class="nav__link">Linea de Negocio</a>
     </li>
     <li class="nav__item" (click)="goRoute('03')">
       <a class="nav__link">Proyectos</a>
@@ -41,6 +44,8 @@
     <li class="nav__item" (click)="goRoute('05')">
       <a class="nav__link">Novedades</a>
     </li>
+    <li class="nav__item" (click)="goRoute('06')">
+      <a class="nav__link">Contacto</a>
+    </li>
   </ul>
-
 </nav>

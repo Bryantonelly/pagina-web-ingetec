@@ -1,30 +1,12 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  OnInit,
-  ViewChild,
-} from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import M from 'materialize-css';
+import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-aniversario',
   templateUrl: './aniversario.component.html',
   styleUrls: ['./aniversario.component.scss'],
 })
-export class AniversarioComponent implements AfterViewInit {
-  ngAfterViewInit() {
-    this.startCarousel();
-  }
+export class AniversarioComponent implements OnInit {
+  items = [1, 2, 3, 4, 5];
+  currentIndex = 0;
 
-  startCarousel() {
-    const images = document.querySelectorAll('.images img');
-    let currentIndex = 0;
-
-    setInterval(() => {
-      images[currentIndex].classList.remove('visible');
-      currentIndex = (currentIndex + 1) % images.length;
-      images[currentIndex].classList.add('visible');
-    }, 6000); // Cambia de imagen cada 2 segundos (ajusta según tu preferencia)
-  }
+  ngOnInit(): void {}
 }
