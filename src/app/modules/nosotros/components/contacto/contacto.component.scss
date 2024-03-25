@@ -1,4 +1,4 @@
-.container__general {
+.container_general {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -29,7 +29,8 @@
   .contenido {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    margin-top: 4rem;
   }
   .company_info {
     background-color: #f9f9f9;
@@ -39,7 +40,7 @@
     // width: 30%;
     margin: 10rem;
     text-align: center;
-    z-index: 5000;
+    z-index: 100;
     h1 {
       font-family: "Arial", sans-serif;
       font-size: 20px;
@@ -65,15 +66,13 @@
   .section_form {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    label {
-      font-size: 10px;
-      padding: 2rem;
-    }
+    // align-items: center;
+    flex-wrap: wrap;
+    font-size: 10px;
   }
   .section_form label {
-    font-size: 20px;
-    padding: 10px;
+    // font-size: 20px;
+    //
     transition: transform 0.3s;
   }
 
@@ -92,9 +91,9 @@
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 30%;
-    margin-bottom: 20px;
+    margin: 20px;
     overflow: hidden;
-    z-index: 5000;
+    z-index: 100;
 
     h1 {
       color: #fff;
@@ -132,7 +131,6 @@
 
       input,
       textarea {
-        padding: 10px;
         margin-bottom: 15px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -177,6 +175,32 @@
       iframe {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container_general {
+    // flex-direction: column;
+    .contenido {
+      //   margin-top: 5rem;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .company_info {
+      margin: 0;
+      width: 100%;
+    }
+    .contact_form {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1800px) {
+  .container_general {
+    .section_form {
+      flex-direction: column;
     }
   }
 }
