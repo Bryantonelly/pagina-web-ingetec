@@ -43,7 +43,7 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-end;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
 }
 .nav__item{
   list-style: none;
@@ -70,7 +70,7 @@
 .navbar__collapse{
   display: none;
   width: 100%;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
 }
 .navbar__collapse .nav__item{
   width: 100%;
