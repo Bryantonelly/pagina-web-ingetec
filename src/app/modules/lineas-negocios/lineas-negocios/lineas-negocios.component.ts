@@ -3,7 +3,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 @Component({
   selector: 'app-lineas-negocios',
   templateUrl: './lineas-negocios.component.html',
-  styleUrls: ['./lineas-negocios.component.css']
+  styleUrls: ['./lineas-negocios.component.scss']
 })
 export class LineasNegociosComponent implements OnInit {
   @ViewChild('seccion1Ref') seccion1Ref!: ElementRef;

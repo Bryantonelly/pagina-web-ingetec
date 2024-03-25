@@ -1,0 +1,436 @@
+.nosotros__container {
+  width: 100%;
+}
+.card_vertical {
+  width: 90%;
+  height: 100%;
+  margin: 2rem;
+  max-width: 100%; /* Limita el ancho máximo del elemento */
+  justify-content: center;
+  display: flex;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(50px); /* Desplazamiento hacia abajo */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Desplazamiento a su posición original */
+    opacity: 1;
+  }
+}
+
+.mensaje_aniversario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  // animation: slide-up 1s ease-out forwards;
+
+  .mensaje {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0f237b80;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    h1 {
+      display: flex;
+      color: #ffffff;
+      font-size: 60px;
+      font-weight: bolder;
+      height: 0;
+      padding: 0 5rem;
+    }
+    h2 {
+      display: flex;
+      color: #ffffff;
+      font-size: 20px;
+      height: 0;
+    }
+  }
+}
+
+.mensaje:hover {
+  animation: slide-up 1s ease-out forwards;
+}
+
+.mensaje_bienvenida {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  gap: 0rem 4rem;
+  animation: slide-up 1s ease-out forwards;
+  opacity: 0;
+  padding: 20px;
+  position: relative;
+  background-image: url("/assets/img/carousel/1.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 4rem;
+  /* Añade una capa semi-transparente sobre la imagen de fondo */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.7
+    ); /* Color blanco con opacidad del 70% */
+    z-index: 0; /* Coloca la capa sobre la imagen de fondo */
+  }
+  .mensaje {
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5rem 5rem 0 0;
+    background-color: #1e0fa0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    animation: slide-up 1s ease-out forwards;
+    position: absolute;
+    left: 0;
+    top: -4rem;
+    // z-index: 5000;
+    // margin: 2rem 0;
+
+    h1 {
+      display: flex;
+      color: #ffffff;
+      font-size: 60px;
+      font-weight: bolder;
+      height: 4rem;
+      // padding: 0 5rem;
+    }
+    h2 {
+      display: flex;
+      color: #ffffff;
+      font-size: 20px;
+    }
+  }
+
+  .descripcion {
+    border: 1px solid #238b8132;
+    // height: 100%;
+    width: 50%;
+    padding: 1rem;
+    text-align: justify;
+    transition: transform 0.3s ease;
+    background-color: #ffffff71;
+    border-radius: 2rem;
+    h2 {
+      color: #3c3838;
+      font-size: 20px;
+      position: relative;
+    }
+    h1 {
+      color: #2e1a8e;
+      font-size: 40px;
+      font-weight: bolder;
+      text-align: center;
+    }
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .descripcion:hover {
+    transform: translateX(
+      5px
+    ); /* Desplazamiento horizontal al pasar el cursor */
+  }
+
+  .descripcion::before {
+    content: "";
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Grosor de la línea */
+    background-color: #2e1a8e; /* Color de la línea */
+    transform: scaleX(0); /* Empieza sin ancho */
+    transform-origin: bottom left;
+    transition: transform 0.3s ease; /* Transición suave */
+  }
+
+  .descripcion:hover::before {
+    transform: scaleX(1); /* Aumenta el ancho de la línea al pasar el cursor */
+    transform-origin: bottom right;
+  }
+}
+
+.clientes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  gap: 0rem 4rem;
+  width: 100%;
+  margin-top: 4rem;
+  h1 {
+    color: #371db6;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  .sector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #48acbd56;
+    padding: 2rem 3rem;
+    gap: 1rem 0.7rem;
+  }
+
+  .sector img {
+    height: 10rem;
+    width: 15rem;
+    border-radius: 0.4rem;
+    transition: transform 0.3s ease; // Agrega una transición para transformar la escala
+  }
+
+  .sector img:hover {
+    // animation: slide-up 1s ease-out forwards;
+    transform: scale(
+      1.5
+    ); // Escala la imagen al 110% cuando el cursor está sobre ella
+  }
+}
+
+.mensaje_vmv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  gap: 0rem 4rem;
+  width: 70%;
+  perspective: 1000px;
+
+  .img {
+    transition: transform 0.5s;
+    transform-style: preserve-3d; // Preserva el efecto 3D
+    img {
+      // height: 100px;
+      width: auto;
+    }
+  }
+  .descripcion {
+    transition: opacity 0.5s;
+    opacity: 0.7; // Inicialmente oculto
+    transform-origin: left; // Origen de la transformación
+    text-align: justify;
+    transition: transform 0.3s ease;
+
+    h2 {
+      color: #3c3838;
+      font-size: 18px;
+      line-height: 1.5rem;
+    }
+    li {
+      color: #3c3838;
+      font-size: 18px;
+    }
+    h1 {
+      color: #2e1a8e;
+      font-size: 30px;
+      font-weight: bolder;
+      text-align: center;
+    }
+  }
+  &:hover {
+    .img {
+      transform: rotateY(180deg); // Giro de 180 grados
+    }
+    .descripcion {
+      opacity: 1; // Mostrar texto
+    }
+  }
+  .descripcion:hover {
+    transform: translateX(
+      5px
+    ); /* Desplazamiento horizontal al pasar el cursor */
+  }
+
+  .descripcion::before {
+    content: "";
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Grosor de la línea */
+    background-color: #2e1a8e; /* Color de la línea */
+    transform: scaleX(0); /* Empieza sin ancho */
+    transform-origin: bottom left;
+    transition: transform 0.3s ease; /* Transición suave */
+  }
+
+  .descripcion:hover::before {
+    transform: scaleX(1); /* Aumenta el ancho de la línea al pasar el cursor */
+    transform-origin: bottom right;
+  }
+}
+
+.descripcion:hover {
+  animation: slide-up 1s ease-out forwards;
+}
+
+.mensaje_vmv:hover {
+  animation: slide-up 1s ease-out forwards;
+}
+
+.politicas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  gap: 0rem 4rem;
+  width: 100%;
+  h1,
+  h2 {
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+  }
+  h1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bolder;
+    background-color: #153557;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  h3 {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.5rem;
+    background-color: #072a5082;
+    width: 100%;
+  }
+  a {
+    width: 100%;
+    height: 2px;
+    text-align: left;
+    font-size: 13px;
+  }
+  .lista_pdfs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem 5rem;
+    border: 1px solid #1943706e;
+    border-style: dotted;
+    padding: 1rem 15rem;
+
+    img {
+      height: 5rem;
+      width: 6rem;
+      // max-width: 3rem;
+      border-radius: 1rem;
+      transition: transform 0.3s ease; /* Transición suave para la transformación */
+    }
+    img:hover {
+      transform: scale(
+        1.3
+      ); /* Escala la imagen al 110% cuando se pasa el cursor sobre ella */
+    }
+  }
+  h2:hover {
+    transform: translateX(5px);
+  }
+
+  a {
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo del enlace */
+  }
+
+  a:hover {
+    transform-origin: bottom right;
+    padding: 0.5rem;
+  }
+}
+
+.mensaje_bienvenida .descripcion {
+  width: 100%;
+}
+
+.mensaje_vmv .descripcion {
+  width: 100%;
+}
+
+.clientes .sector {
+  flex-wrap: wrap;
+}
+
+.politicas .lista_pdfs {
+  padding: 1rem;
+  overflow-x: auto; /* Permite hacer scroll horizontal en dispositivos pequeños */
+}
+
+.politicas .lista_pdfs img {
+  height: 6rem;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 1800px) {
+  .mensaje_aniversario {
+    width: 100%;
+    flex-direction: column;
+    // flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1708px) {
+  .mensaje_bienvenida {
+    flex-wrap: wrap;
+    .mensaje {
+      width: 100%;
+      position: relative;
+    }
+  }
+}
+@media (max-width: 908px) {
+  .card_vertical {
+    width: 90%;
+  }
+
+  .mensaje_bienvenida .descripcion {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .mensaje_vmv {
+    flex-wrap: wrap;
+  }
+  .mensaje_vmv .descripcion {
+    width: 100%;
+  }
+
+  .clientes .sector {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .politicas .lista_pdfs {
+    padding: 1rem;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .politicas .lista_pdfs img {
+    width: 4rem;
+    height: 4rem;
+  }
+}

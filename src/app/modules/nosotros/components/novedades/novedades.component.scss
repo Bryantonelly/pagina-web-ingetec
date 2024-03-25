@@ -1,0 +1,125 @@
+.card_vertical {
+  width: 90%;
+  height: 100%;
+  margin: 2rem;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  opacity: 1;
+}
+
+.container__general {
+  position: relative;
+  background-image: url("/assets/img/carousel/3.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  /* Añade una capa semi-transparente sobre la imagen de fondo */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.7
+    ); /* Color blanco con opacidad del 70% */
+    z-index: 1; /* Coloca la capa sobre la imagen de fondo */
+  }
+}
+
+/* Animación */
+@keyframes slide-up {
+  from {
+    transform: translateY(50px); /* Desplazamiento inicial hacia abajo */
+    opacity: 0; /* Opacidad inicial */
+  }
+  to {
+    transform: translateY(0); /* Desplazamiento final hacia arriba */
+    opacity: 1; /* Opacidad final */
+  }
+}
+
+.section {
+  animation: slide-up 1s ease; /* Aplica la animación a la sección */
+}
+
+/* Estilos adicionales */
+h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(23, 144, 104, 0.809);
+  padding: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+}
+
+.publicaciones,
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.publicacion,
+.media {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.publicacion img,
+.media img,
+.media video {
+  width: 15rem;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.publicacion p,
+.media p {
+  padding: 10px;
+  background-color: #fff;
+  width: 15rem;
+}
+
+@media (max-width: 768px) {
+  .publicaciones,
+  .galeria {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .card_vertical {
+    margin-top: 6rem;
+  }
+}
+
+.media img,
+.media video {
+  width: 15rem;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; /* Agrega una transición suave al efecto */
+}
+
+.media img:hover,
+.media video:hover {
+  transform: scale(
+    1.1
+  ); /* Escala la imagen o video al 110% al pasar el cursor por encima */
+}

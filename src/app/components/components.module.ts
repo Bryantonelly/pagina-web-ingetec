@@ -5,23 +5,19 @@ import { FooterComponent } from './footer/footer.component';
 import { CoverComponent } from './cover/cover.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
-
-
 @NgModule({
   declarations: [
     NavbarComponent,
     FooterComponent,
     CoverComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   exports: [
     NavbarComponent,
     FooterComponent,
     CoverComponent,
-    NotFoundComponent
-  ]
+    NotFoundComponent,
+  ],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}

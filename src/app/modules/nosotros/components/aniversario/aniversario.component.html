@@ -1,0 +1,9 @@
+<div class="carousel_">
+  <div class="images">
+    <img
+      *ngFor="let item of items"
+      [src]="'assets/img/carousel/' + item + '.jpeg'"
+      alt="Image {{ item }}"
+    />
+  </div>
+</div>
