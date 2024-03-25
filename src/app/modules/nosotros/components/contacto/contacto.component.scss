@@ -65,10 +65,22 @@
 
   .section_form {
     display: flex;
-    flex-direction: row;
-    // align-items: center;
     flex-wrap: wrap;
-    font-size: 10px;
+    justify-content: center;
+    gap: 2rem;
+    input,
+    textarea {
+      margin-bottom: 15px;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #007bff;
+    }
   }
   .section_form label {
     // font-size: 20px;
@@ -200,6 +212,7 @@
 @media (max-width: 1800px) {
   .container_general {
     .section_form {
+      display: contents;
       flex-direction: column;
     }
   }

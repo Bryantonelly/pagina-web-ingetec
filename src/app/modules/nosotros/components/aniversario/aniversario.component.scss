@@ -84,25 +84,30 @@
   .images img:nth-child(1) {
     top: 0;
     left: 0;
+    border-radius: 0;
   }
 
   .images img:nth-child(2) {
     top: 0;
     left: 0vw;
+    border-radius: 0;
   }
 
   .images img:nth-child(3) {
     bottom: 0;
     left: 0;
+    border-radius: 0;
   }
 
   .images img:nth-child(4) {
     top: 0;
     right: 0vw;
+    border-radius: 0;
   }
 
   .images img:nth-child(5) {
     top: 0;
     left: 0;
+    border-radius: 0;
   }
 }
