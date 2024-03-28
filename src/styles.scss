@@ -51,3 +51,8 @@ app-navbar {
   align-items: flex-start;
   // height: 100vh;
 }
+.container__general--secondary {
+  margin-top: var(--navbar-height);
+  width: 100%;
+  height: calc(100vh - var(--navbar-height));
+}
