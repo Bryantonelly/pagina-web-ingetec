@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   templateUrl: './cover.component.html',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoverComponent implements OnInit {
 
+  @Input() altCover : string = "assets\img\carousel\\1.jpeg";
+  @Input() imgCover : string = "assets\img\carousel\\1.jpeg";
   constructor() { }
 
   ngOnInit(): void {
