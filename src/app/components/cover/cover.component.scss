@@ -1,4 +1,4 @@
-.cover{
+.cover {
   width: 100%;
   height: 50vh;
   background-color: var(--wine-color);
@@ -9,15 +9,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.7;
 }
-.cover img{
+.cover img {
   width: 100%;
 }
-.cover__text{
+.cover__text {
   position: absolute;
   font-weight: bolder;
-  color: antiquewhite;
-  font-size: 60px;
-  bottom:100px;
+  color: rgb(255, 255, 255);
+  font-size: 69px;
+  bottom: 100px;
   text-shadow: 0 0 10px #000000be;
 }

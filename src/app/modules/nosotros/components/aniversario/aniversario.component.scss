@@ -21,8 +21,8 @@
 }
 
 .images img {
-  width: 12vw; /* Ancho de cada imagen */
-  height: 12vw; /* Altura de cada imagen */
+  width: 10vw; /* Ancho de cada imagen */
+  height: 10vw; /* Altura de cada imagen */
   object-fit: cover;
   margin: 0 1vw; /* Espaciado entre las imágenes */
   transition: transform 0.3s;
@@ -32,31 +32,31 @@
 
 .images img:nth-child(1) {
   top: -2vh;
-  left: 13vw;
-  border-radius: 5rem 5rem 0 0;
+  left: 14vw;
+  border-radius: 3rem 3rem 0 0;
 }
 
 .images img:nth-child(2) {
   top: 23.5vh;
   left: 0vw;
-  border-radius: 5rem 0rem 0rem 5rem;
+  border-radius: 3rem 0rem 0rem 3rem;
 }
 
 .images img:nth-child(3) {
-  bottom: -14.5vh;
-  left: 13vw;
-  border-radius: 0rem 0rem 5rem 5rem;
+  bottom: -10.5vh;
+  left: 14vw;
+  border-radius: 0rem 0rem 3rem 3rem;
 }
 
 .images img:nth-child(4) {
   top: 23.5vh;
   right: 0vw;
-  border-radius: 0rem 5rem 5rem 0rem;
+  border-radius: 0rem 3rem 3rem 0rem;
 }
 
 .images img:nth-child(5) {
   top: 23.5vh;
-  left: 13vw;
+  left: 14vw;
 }
 
 .images img:hover {
