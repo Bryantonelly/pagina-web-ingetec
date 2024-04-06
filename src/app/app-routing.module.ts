@@ -17,6 +17,13 @@ const routes: Routes = [
         (m) => m.LineasNegociosModule
       ),
   },
+  {
+    path: 'linea-etica',
+    loadChildren: () =>
+      import('./modules/linea-etica/linea-etica.module').then(
+        (m) => m.LineaEticaModule
+      ),
+  },
   { path: '**', component: NotFoundComponent },
 ];
 

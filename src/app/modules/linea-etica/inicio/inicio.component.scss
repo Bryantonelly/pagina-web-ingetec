@@ -1,0 +1,51 @@
+:root {
+  --card-color: rgba(54, 0, 204, 0.555);
+  --card-header-color: rgb(21, 44, 92);
+  --card-body-color: rgb(255, 255, 255);
+  --card-footer-color: rgb(240, 70, 70);
+}
+.card {
+  margin: 0 auto;
+  background: var(--card-color);
+  color: rgb(255, 255, 255);
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.377);
+  border-radius: 20px;
+}
+.card-header {
+  background: var(--card-header-color);
+  margin: -20px;
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+  font-size: 0.7rem;
+}
+.card-body {
+  background: var(--card-body-color);
+  margin: -20px;
+  padding: 20px;
+  border-radius: 00px 00px 20px 20px;
+}
+.card-footer {
+  background: var(--card-footer-color);
+  margin: -20px;
+  padding: 20px;
+  border-radius: 00px 00px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+b {
+  padding: 8px;
+  margin: 2px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin-left: 5.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+b:hover {
+  color: var(--card-body-color);
+  background: rgb(137, 137, 141);
+  cursor: pointer;
+}

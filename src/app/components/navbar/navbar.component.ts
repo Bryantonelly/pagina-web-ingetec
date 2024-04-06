@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  public isOpen: boolean = false;
+  public isOpen: boolean = true;
 
   constructor(private router: Router) {}
 

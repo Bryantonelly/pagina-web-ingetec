@@ -17,8 +17,14 @@ import { LineasNegociosComponent } from './components/lineas-negocios/lineas-neg
     NovedadesComponent,
     ContactoComponent,
     ProyectosComponent,
-    LineasNegociosComponent
+    LineasNegociosComponent,
   ],
-  imports: [CommonModule, NosotrosRoutingModule, FormsModule, ComponentsModule, HttpClientModule],
+  imports: [
+    CommonModule,
+    NosotrosRoutingModule,
+    FormsModule,
+    ComponentsModule,
+    HttpClientModule,
+  ],
 })
 export class NosotrosModule {}
