@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContactoComponent implements OnInit {
   showAnimation = false;
   altCover: string = 'CONTÁCTANOS';
-  imgCover: string = 'assets\\img\\carousel\\9.png';
+  imgCover: string = 'assets\\img\\carousel\\11.JPG';
 
   constructor() {}
 
