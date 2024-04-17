@@ -11,21 +11,21 @@ export class LineasNegociosComponent implements OnInit {
   @ViewChild('seccion3Ref') seccion3Ref!: ElementRef;
 
   imagesOpt1: string[] = [
-    'assets\\img\\carousel\\3.jpeg',
-    'assets\\img\\carousel\\2.jpeg',
-    'assets\\img\\carousel\\1.jpeg'
+    'assets\\img\\proyectos\\333.jpg',
   ];
 
   imagesOpt2: string[] = [
-    'assets\\img\\carousel\\4.jpeg',
-    'assets\\img\\carousel\\5.jpeg',
-    'assets\\img\\carousel\\6.jpeg'
+    "assets\\img\\proyectos\\36.jpg",
+    "assets\\img\\proyectos\\41.jpg",
+    "assets\\img\\proyectos\\54.jpg",
+    "assets\\img\\proyectos\\45.jpg",
   ];
 
   imagesOpt3: string[] = [
-    'assets\\img\\carousel\\7.jpeg',
-    'assets\\img\\carousel\\8.jpeg',
-    'assets\\img\\carousel\\9.jpeg'
+      "assets\\img\\proyectos\\90.jpg",
+      "assets\\img\\proyectos\\93.jpg",
+      "assets\\img\\proyectos\\100.jpg",
+      "assets\\img\\proyectos\\96.jpg",
   ];
   imageSelectOpt1: string = this.imagesOpt1[0];
   imageSelectOpt2: string = this.imagesOpt2[0];
