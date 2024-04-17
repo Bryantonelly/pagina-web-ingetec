@@ -8,6 +8,7 @@
   background-image: url("/assets/img/carousel/3.jpeg");
   background-size: cover;
   background-position: center;
+  animation: fadeIn 1s ease-out;
 
   /* Añade una capa semi-transparente sobre la imagen de fondo */
   &::before {
@@ -43,7 +44,7 @@
     z-index: 100;
     h1 {
       font-family: "Arial", sans-serif;
-      font-size: 20px;
+      font-size: 15px;
       font-weight: bold;
       color: #153557;
       margin-bottom: 20px;
@@ -53,7 +54,7 @@
 
     p {
       font-family: "Arial", sans-serif;
-      font-size: 18px;
+      font-size: 13px;
       color: #333;
       margin-bottom: 10px;
     }
@@ -215,5 +216,16 @@
       display: contents;
       flex-direction: column;
     }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

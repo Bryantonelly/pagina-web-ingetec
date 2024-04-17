@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
   height: var(--navbar-height);
-  background: #d6ac16d9;
+  background: #626060c3;
   position: absolute;
   top: 0;
   left: 0;
@@ -17,6 +17,7 @@
   border-radius: 5px;
   box-sizing: content-box;
   transition: all 1s;
+  color: #ffffff;
 }
 .navbar__toggler:hover {
   /* box-sizing: content-box; */
@@ -33,11 +34,13 @@
   align-items: center;
 }
 .navbar__brand {
-  width: 200px;
+  width: 150px;
+  left: 7rem;
+  position: absolute;
 }
 .navbar__options {
   width: 100%;
-  height: 70px;
+  height: 10px;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -57,11 +60,13 @@
 }
 .nav__link {
   padding: 0 10px;
-  font-style: normal;
+  font-style: italic;
+  font-weight: bolder;
   color: var(--white-color);
   cursor: pointer;
   text-decoration: none;
   transition: all 0.25s;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .nav__link:hover {
   scale: 1.02;

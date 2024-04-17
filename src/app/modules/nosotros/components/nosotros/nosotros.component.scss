@@ -1,6 +1,28 @@
+.container__general {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 0;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .nosotros__container {
   width: 100%;
 }
+
 .card_vertical {
   width: 100%;
   height: 100%;
@@ -31,7 +53,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #0f237b80;
+    background-color: #0f6b7b80;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     h1 {
       display: flex;
@@ -88,7 +110,7 @@
     width: 100%;
     align-items: center;
     flex-direction: column;
-    background-color: #131da9fb;
+    background-color: #138ea9fb;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     animation: slide-up 1s ease-out forwards;
     margin: 1rem 0;
@@ -166,10 +188,10 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   gap: 0rem 4rem;
   width: 100%;
-  margin-top: 4rem;
+  margin-bottom: 3rem;
   h1 {
     color: #371db6;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bolder;
   }
   .sector {
@@ -183,8 +205,8 @@
   }
 
   .sector img {
-    height: 10rem;
-    width: 15rem;
+    height: 7rem;
+    width: 10rem;
     border-radius: 0.4rem;
     transition: transform 0.3s ease; // Agrega una transición para transformar la escala
   }
@@ -393,9 +415,9 @@
   }
 }
 @media (max-width: 908px) {
-  .card_vertical {
-    width: 90%;
-  }
+  // .card_vertical {
+  //   height: 50vh;
+  // }
 
   .mensaje_vmv {
     flex-wrap: wrap;

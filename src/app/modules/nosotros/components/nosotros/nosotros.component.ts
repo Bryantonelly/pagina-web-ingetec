@@ -30,7 +30,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 export class NosotrosComponent implements OnInit {
   showAnimation = false;
   altCover: string = 'NOSOTROS';
-  imgCover: string = 'assets\\img\\carousel\\8.png';
+  imgCover: string = 'assets\\img\\carousel\\10.jpg';
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
