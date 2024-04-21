@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,12 +9,24 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
   public isOpen: boolean = true;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        const navCollapse = document.querySelector('.navbar__collapse');
+        if (navCollapse) {
+          navCollapse.classList.add('hide');
+        }
+      }
+    });
+  }
 
   ngOnInit(): void {}
 
   onChangeBar() {
-    this.isOpen = !this.isOpen;
+    const navCollapse = document.querySelector('.navbar__collapse');
+    if (navCollapse) {
+      navCollapse.classList.toggle('hide');
+    }
   }
 
   goRoute(index: string) {
@@ -39,6 +51,10 @@ export class NavbarComponent implements OnInit {
         break;
       default:
         break;
+    }
+    const navCollapse = document.querySelector('.navbar__collapse');
+    if (navCollapse) {
+      navCollapse.classList.add('hide');
     }
   }
 }

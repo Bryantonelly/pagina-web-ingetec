@@ -246,8 +246,8 @@
     transition: transform 0.5s;
     transform-style: preserve-3d; // Preserva el efecto 3D
     img {
-      // height: 100px;
-      width: auto;
+      width: 10rem;
+      max-width: 15rem;
     }
   }
   .descripcion {
@@ -365,13 +365,14 @@
     border: 1px solid #1943706e;
     border-style: dotted;
     padding: 1rem 15rem;
+    margin: 1rem;
 
     img {
-      height: 5rem;
-      width: 6rem;
-      // max-width: 3rem;
+      width: 4rem;
       border-radius: 1rem;
-      transition: transform 0.3s ease; /* Transición suave para la transformación */
+      transition: transform 0.3s ease;
+      width: 25rem;
+      max-width: 5rem;
     }
     img:hover {
       transform: scale(
@@ -402,10 +403,6 @@
   overflow-x: auto; /* Permite hacer scroll horizontal en dispositivos pequeños */
 }
 
-.politicas .lista_pdfs img {
-  height: 6rem;
-}
-
 /* Estilos para dispositivos móviles */
 @media (max-width: 1800px) {
   .mensaje_aniversario {
@@ -427,19 +424,19 @@
   }
 
   .clientes .sector {
-    flex-direction: column;
     align-items: center;
   }
 
+  .clientes {
+    .sector img {
+      height: 4rem;
+      width: 7rem;
+    }
+  }
   .politicas .lista_pdfs {
     padding: 1rem;
     overflow-x: auto;
     display: flex;
     justify-content: center;
-  }
-
-  .politicas .lista_pdfs img {
-    width: 4rem;
-    height: 4rem;
   }
 }
