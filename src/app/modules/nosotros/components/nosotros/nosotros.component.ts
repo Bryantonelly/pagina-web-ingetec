@@ -45,7 +45,7 @@ export class NosotrosComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  items = [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13];
+  items = [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12];
 
   addSlide() {
     const lastItem = this.items[this.items.length - 1];

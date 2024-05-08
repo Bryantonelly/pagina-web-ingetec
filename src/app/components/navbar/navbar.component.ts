@@ -8,7 +8,7 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   public isOpen: boolean = true;
-
+  activeLink: string = '';
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
@@ -30,6 +30,8 @@ export class NavbarComponent implements OnInit {
   }
 
   goRoute(index: string) {
+    this.activeLink = index;
+
     switch (index) {
       case '01':
         this.router.navigate(['/']);

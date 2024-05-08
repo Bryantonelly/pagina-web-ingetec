@@ -8,6 +8,7 @@
   /* align-items: center; */
   border-radius: 50%;
   // height: 40rem;
+  z-index: 5;
 }
 
 .images {
@@ -20,7 +21,7 @@
 }
 
 .images img {
-  width: 15vw; /* Ancho de cada imagen */
+  width: 100%; /* Ancho de cada imagen */
   height: 10vw; /* Altura de cada imagen */
   max-width: 100%;
   object-fit: cover;
