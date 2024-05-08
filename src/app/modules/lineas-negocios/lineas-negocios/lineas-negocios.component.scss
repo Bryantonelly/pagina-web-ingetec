@@ -176,8 +176,11 @@ img {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .linea__description{
     width: 100%;
+  }
+  .linea__carousel{
+    display: none;
   }
 }

@@ -1,3 +1,6 @@
+p{
+  margin-bottom: 0;
+}
 .container__general--secondary{
   margin-top: 0;
   height: auto;
@@ -14,6 +17,7 @@
   background: #5d5c5c ;
 }
 .bar__item{
+  color: aliceblue;
   width: 100%;
   height: 150px;
   display: flex;
@@ -22,6 +26,8 @@
   flex-direction: column;
   cursor: pointer;
   img{
+    display: none;
+    fill: aliceblue;
     width:60px; height:60px
   }
   // margin: 20px 0;
@@ -38,9 +44,10 @@
   // margin: 20px 0;
   p{
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 16px;
   }
   img{
+    display: block;
     width:100px; height:100px
   }
 }
@@ -57,11 +64,11 @@
   height: 250px;
   overflow: hidden;
   // background: #fbef1b;
-  display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
-  border: solid 1px #000;
+  // border: solid 1px #000;
   box-shadow: 0 0 10px #000000be;
 }
 .proyecto__card--img{
@@ -73,25 +80,46 @@
     box-shadow: 0 0 10px #000000be;
     height: 100%;
     width: 100%;
+    overflow: hidden;
+  }
+}
+.proyecto__card:hover{
+  overflow: visible;
+  position: relative;
+  z-index: 1000;
+
+  .proyecto__card--title{
+    display: none;
+  }
+  .proyecto__card--img{
+    box-shadow: 0 0 2000px #fffffff5;
   }
 }
 .proyecto__card--content{
   position: absolute;
   bottom: 0;
-  height: 100%;
+  height: 250px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  padding: 10px;
+  width: 100%;
 }
 .proyecto__card--title{
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bolder;
-  background-color: #fbfbfbbf;
+  background-color: #ffffff;
   padding: 5px;
   margin: 0;
+  height: 100px;
+  width: 100%;
+  color: #000296;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
+
 .proyecto__card--btn{
   border: #5d5c5c;
   background: #5d5c5c;
