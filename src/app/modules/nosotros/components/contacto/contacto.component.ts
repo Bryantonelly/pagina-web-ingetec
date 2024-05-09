@@ -32,8 +32,8 @@ export class ContactoComponent implements OnInit {
     )).value;
 
     const recipientEmail =
-      'compliance.officer@ingetecperu.com;atencionalcliente@ingetecperu.com';
-    const subject = 'Consulta';
+      'compliance.officer@ingetecperu.com;efrain.aylas@ingetecperu.com;jose.bullon@ingetecperu.com';
+    const subject = 'Consulta desde la página web';
     const body = `
       Esta persona quiere comunicarse desde la página web:
       
